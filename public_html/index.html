@@ -10,6 +10,11 @@
         <script type="text/javascript" src="http://github.com/DmitryBaranovskiy/raphael/raw/master/raphael-min.js"></script>
         <!--<script type="text/javascript" src="../raphael-min.js"></script>    -->
         <link href="org.css" rel="stylesheet">
+        <script type="text/javascript" src="main.js"></script>  
+        <script type="text/javascript" src="principal.js"></script>  
+        <script type="text/javascript" src="pathgr.js"></script> 
+        <script type="text/javascript" src="funciones.js"></script> 
+    
     </head>
     
     <body>
@@ -20,6 +25,7 @@
         
 	<!--<input type="text" id="comando" />
         <p id = "dialg">Dialogo</p>-->
+        <!--
         <button type = "button" onclick="cirlc()">Circulo</button>
         <button type = "button" onclick="cuadrado()">Cuadrado</button>
         <button type = "button" onclick="rectangulo()">Rectangulo</button>
@@ -27,12 +33,10 @@
         <button type = "button" onclick="elipse()">Elipse</button>
         <button type = "button" onclick="lineas()">Linea</button>
         <button type = "button" onclick="world(20, esq, 20, 0.2)">Borrado Total</button>
-	
+	-->
         <!-- a script that create's a paper and a rectangle -->
         
-        <script type="text/javascript" src="principal.js"></script>  
-        <script type="text/javascript" src="pathgr.js"></script> 
-        <script type="text/javascript" src="funciones.js"></script> 
+       
         
 	<script type="text/javascript">
             var esq = 600;
@@ -43,26 +47,7 @@
             document.write(world(20, esq, 20, 0.2));    
             
             
-            
-            /*
-            var rect2 = paper.rect(20,500,100,600).attr({fill: "red"});
-            alert("el cuadrado va a cambiar");
-            rect2 = paper.rect(20,500,100,600).attr({fill: "blue"});
-            var elipse = paper.ellipse(100, 100, 50, 30).attr({fill: "blue"});
-            */
-            // Cambiar inf es inferior, sup superior, inc incremento, gro es grosor linea de cuadricula.
-            /* $("#paper1").on(
-                "click",
-                function(e) {
-                    e.preventDefault();
-                    var rect = container.getBoundingClientRect();
-                    var x0 = e.pageX, y0 = e.pageY;
-                    var x = x0 - rect.left, y = y0 - rect.top;
-                    var elem = paper.getElementByPoint(x0, y0);
-
-                    var rectangulos = paper.rect(x, y, width, height);
-             })
-            */
+           
 	</script>
         
         

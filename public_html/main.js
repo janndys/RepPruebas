@@ -4,4 +4,10 @@
  * and open the template in the editor.
  */
 
+"use strict";
+// Initialize function
+var init = function() {
+//    raphaelPaint.initialize();
+};
 
+$(document).ready(init);

@@ -36,8 +36,13 @@
         
 	<script type="text/javascript">
             var esq = 600;
-            var paper = Raphael("paper1", esq, esq); 
+            
+            container = document.getElementById('paper1');
+            paper = new Raphael(container, esq, esq);
+            //var paper = new Raphael("paper1", esq, esq); 
             document.write(world(20, esq, 20, 0.2));    
+            
+            
             
             /*
             var rect2 = paper.rect(20,500,100,600).attr({fill: "red"});
@@ -46,8 +51,18 @@
             var elipse = paper.ellipse(100, 100, 50, 30).attr({fill: "blue"});
             */
             // Cambiar inf es inferior, sup superior, inc incremento, gro es grosor linea de cuadricula.
-           
-            
+            /* $("#paper1").on(
+                "click",
+                function(e) {
+                    e.preventDefault();
+                    var rect = container.getBoundingClientRect();
+                    var x0 = e.pageX, y0 = e.pageY;
+                    var x = x0 - rect.left, y = y0 - rect.top;
+                    var elem = paper.getElementByPoint(x0, y0);
+
+                    var rectangulos = paper.rect(x, y, width, height);
+             })
+            */
 	</script>
         
         

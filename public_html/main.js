@@ -7,7 +7,7 @@
 "use strict";
 // Initialize function
 var init = function() {
-//    raphaelPaint.initialize();
+//    .initialize();
 };
 
 $(document).ready(init);

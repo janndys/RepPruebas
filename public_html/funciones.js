@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+// Funcion que dibuja circulos, triangulos cuadrados y lineas en el Paper 
+// Function draw diffirent Shapes.
            
            var clickHandler = function(){
                             alert("clicked");

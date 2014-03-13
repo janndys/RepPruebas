@@ -7,7 +7,8 @@ and open the template in the editor.
     Created on : 5/03/2014, 07:39:51 AM
     Author     : root
 */
-
+// setea el color de fondo de pantalla en gris.
+// set a gray color background
 html, body
         {
         background-color: #333;
